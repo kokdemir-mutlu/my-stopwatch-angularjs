@@ -1,0 +1,28 @@
+<div class="container-stopwatch">
+  <div class="counter-div">
+    <p class="p-counter" ng-bind='$ctrl.counterP'></p>
+  </div>
+
+  <div class="buttons-div">
+    <button ng-click="$ctrl.handleStartButton()">{{$ctrl.startButton}}</button>
+    <button ng-click="$ctrl.handleResetButton()">{{$ctrl.resetButton}}</button>
+  </div>
+
+  <div class="laps-div">
+    <table>
+      <thead>
+        <tr>
+          <th>LAP</th>
+          <th>TIME</th>
+        </tr>
+      </thead>
+      <tbody ng-model='$ctrl.laps'>
+        <tr ng-repeat="lap in $ctrl.laps" >
+          <td>{{lap.counter}}</td>
+          <td>{{lap.time}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  
+</div>
