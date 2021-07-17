@@ -18,8 +18,8 @@
       </thead>
       <tbody>
         <tr ng-repeat="lap in $ctrl.laps" >
-          <td>{{lap.counter}}</td>
-          <td>{{lap.time}}</td>
+          <td>{{$index + 1}}</td>
+          <td>{{lap}}</td>
         </tr>
       </tbody>
     </table>

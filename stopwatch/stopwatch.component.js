@@ -58,7 +58,7 @@ angular.module("stopwatch").component("stopwatchComponent", {
     };
 
     addLap = function () {
-      stopWatch.laps.push({counter: stopWatch.counterForLaps, time : stopWatch.counterP});
+      stopWatch.laps.push(stopWatch.counterP);
       ++stopWatch.counterForLaps;
     };
 
